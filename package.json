@@ -1,0 +1,26 @@
+{
+  "name": "tg-testnpm",
+  "version": "0.0.1",
+  "description": "ignore this learning how to publish to npm",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel ./src -d ./lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wtulloch/npm-exa-e.git"
+  },
+  "keywords": [],
+  "author": "William Tulloch <me@williamtulloch.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wtulloch/npm-exa-e/issues"
+  },
+  "homepage": "https://github.com/wtulloch/npm-exa-e#readme",
+  
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  }
+}
