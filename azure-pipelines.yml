@@ -65,11 +65,11 @@ steps:
   inputs:
     sourceFolder: '$(Build.SourcesDirectory)'
     contents: 'Readme.md'
-    targetFolder: $(Build.ArtifactStagingDirectory)/readme
+    targetFolder: $(Build.ArtifactStagingDirectory)/release-notes
   displayName: 'Copy Release Notes'
 
 - task: PublishBuildArtifacts@1
   inputs:
-    pathtoPublish: '$(Build.ArtifactStagingDirectory)/readme'
+    pathtoPublish: '$(Build.ArtifactStagingDirectory)/release-notes'
     artifactName: readme
   displayName: 'Publish Release Notes artifact'
