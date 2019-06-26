@@ -21,15 +21,19 @@ steps:
   displayName: 'npm install and build'
 
 - script: |
+    npm run test
+  displayName: 'run tests'
+
+- script: |
     npm pack
   displayName: 'package for NPM release'
 
--task: CopyFiles@2
-    inputs:
-      sourceFolder: '$(Build.SourcesDirectory)/lib'
-      contents: '**'
-      targetFolder: $(Build.ArtifactStagingDirectory)/lib
-    displayName: 'copy lib output'
+- task: CopyFiles@2
+  inputs:
+    sourceFolder: '$(Build.SourcesDirectory)/lib'
+    contents: '**'
+    targetFolder: $(Build.ArtifactStagingDirectory)/lib
+  displayName: 'copy lib output'
 
 - task: PublishBuildArtifacts@1
   inputs:
