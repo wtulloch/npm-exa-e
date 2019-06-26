@@ -1,13 +1,12 @@
 {
   "name": "tg-testnpm",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "ignore this learning how to publish to npm",
   "main": "build/index.js",
   "scripts": {
     "test": "nyc mocha --require babel-core/register",
     "build": " npm run lint && babel ./src -d ./lib",
     "lint": "eslint ./src"
-    
   },
   "repository": {
     "type": "git",
