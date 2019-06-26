@@ -1,6 +1,6 @@
 {
   "name": "tg-testnpm",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "ignore this learning how to publish to npm",
   "main": "build/index.js",
   "scripts": {
